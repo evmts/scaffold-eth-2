@@ -9,12 +9,13 @@
     "serve": "next start",
     "lint": "next lint",
     "format": "prettier --write . '!(node_modules|.next|contracts)/**/*'",
-    "check-types": "tsc --noEmit --incremental",
     "vercel": "vercel",
     "vercel:yolo": "vercel --build-env NEXT_PUBLIC_IGNORE_BUILD_ERROR=true"
   },
   "dependencies": {
     "@ethersproject/providers": "^5.7.2",
+    "@evmts/ts-plugin": "^0.8.0",
+    "@evmts/webpack-plugin": "^0.8.0",
     "@heroicons/react": "^2.0.11",
     "@rainbow-me/rainbowkit": "1.0.8",
     "@uniswap/sdk-core": "^4.0.1",
@@ -49,6 +50,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "postcss": "^8.4.16",
     "prettier": "^2.8.4",
+    "solc": "^0.8.21",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.1.6",
     "vercel": "^28.15.1"

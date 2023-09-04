@@ -16,7 +16,12 @@
     "incremental": true,
     "paths": {
       "~~/*": ["./*"]
-    }
+    },
+    "plugins": [
+      {
+        "name": "@evmts/ts-plugin"
+      }
+    ]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
